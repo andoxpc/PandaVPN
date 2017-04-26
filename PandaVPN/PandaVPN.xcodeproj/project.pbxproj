@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040843AE1E9E5C18001EA1D2 /* ServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040843AD1E9E5C18001EA1D2 /* ServiceViewController.m */; };
+		04F4A36D1E9E09EA00E6C5F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A36C1E9E09EA00E6C5F8 /* main.m */; };
+		04F4A3701E9E09EA00E6C5F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A36F1E9E09EA00E6C5F8 /* AppDelegate.m */; };
+		04F4A3731E9E09EA00E6C5F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A3721E9E09EA00E6C5F8 /* ViewController.m */; };
+		04F4A3761E9E09EA00E6C5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F4A3741E9E09EA00E6C5F8 /* Main.storyboard */; };
+		04F4A3781E9E09EA00E6C5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F4A3771E9E09EA00E6C5F8 /* Assets.xcassets */; };
+		04F4A37B1E9E09EA00E6C5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F4A3791E9E09EA00E6C5F8 /* LaunchScreen.storyboard */; };
+		04F4A3841E9E0A0900E6C5F8 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F4A3831E9E0A0900E6C5F8 /* NetworkExtension.framework */; };
+		04F4A3891E9E0AFD00E6C5F8 /* VPNInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A3881E9E0AFD00E6C5F8 /* VPNInfo.m */; };
+		04F4A38D1E9E0BB600E6C5F8 /* VPNConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A38C1E9E0BB600E6C5F8 /* VPNConnectionManager.m */; };
+		04F4A3921E9E146D00E6C5F8 /* UIView+YGPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A3911E9E146D00E6C5F8 /* UIView+YGPulseView.m */; };
+		04F4A3961E9E291A00E6C5F8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A3951E9E291A00E6C5F8 /* AboutViewController.m */; };
+		04F4A39E1E9E57DB00E6C5F8 /* HostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A39D1E9E57DB00E6C5F8 /* HostViewController.m */; };
+		04F4A3A11E9E58A700E6C5F8 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A3A01E9E58A700E6C5F8 /* InformationViewController.m */; };
+		04F4A3A41E9E59B800E6C5F8 /* DurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F4A3A31E9E59B800E6C5F8 /* DurationViewController.m */; };
+		04F58BA31EA0D92300A429B3 /* HostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F58BA21EA0D92300A429B3 /* HostModel.m */; };
+		04F58BA71EA0F35A00A429B3 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F58BA61EA0F35A00A429B3 /* API.m */; };
+		AD672E210C64A3B5E0A38924 /* libPods-PandaVPN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8999C26FF4A6C2783E41A87 /* libPods-PandaVPN.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040843AC1E9E5C18001EA1D2 /* ServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceViewController.h; sourceTree = "<group>"; };
+		040843AD1E9E5C18001EA1D2 /* ServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceViewController.m; sourceTree = "<group>"; };
+		04F4A3681E9E09EA00E6C5F8 /* PandaVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F4A36C1E9E09EA00E6C5F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F4A36E1E9E09EA00E6C5F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04F4A36F1E9E09EA00E6C5F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04F4A3711E9E09EA00E6C5F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04F4A3721E9E09EA00E6C5F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04F4A3751E9E09EA00E6C5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F4A3771E9E09EA00E6C5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F4A37A1E9E09EA00E6C5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F4A37C1E9E09EA00E6C5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F4A3831E9E0A0900E6C5F8 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		04F4A3851E9E0A0900E6C5F8 /* PandaVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PandaVPN.entitlements; sourceTree = "<group>"; };
+		04F4A3871E9E0AFD00E6C5F8 /* VPNInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNInfo.h; sourceTree = "<group>"; };
+		04F4A3881E9E0AFD00E6C5F8 /* VPNInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNInfo.m; sourceTree = "<group>"; };
+		04F4A38B1E9E0BB600E6C5F8 /* VPNConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNConnectionManager.h; sourceTree = "<group>"; };
+		04F4A38C1E9E0BB600E6C5F8 /* VPNConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNConnectionManager.m; sourceTree = "<group>"; };
+		04F4A3901E9E146D00E6C5F8 /* UIView+YGPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGPulseView.h"; sourceTree = "<group>"; };
+		04F4A3911E9E146D00E6C5F8 /* UIView+YGPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGPulseView.m"; sourceTree = "<group>"; };
+		04F4A3941E9E291A00E6C5F8 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		04F4A3951E9E291A00E6C5F8 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		04F4A39C1E9E57DB00E6C5F8 /* HostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostViewController.h; sourceTree = "<group>"; };
+		04F4A39D1E9E57DB00E6C5F8 /* HostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostViewController.m; sourceTree = "<group>"; };
+		04F4A39F1E9E58A700E6C5F8 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		04F4A3A01E9E58A700E6C5F8 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		04F4A3A21E9E59B800E6C5F8 /* DurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DurationViewController.h; sourceTree = "<group>"; };
+		04F4A3A31E9E59B800E6C5F8 /* DurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DurationViewController.m; sourceTree = "<group>"; };
+		04F58BA11EA0D92300A429B3 /* HostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostModel.h; sourceTree = "<group>"; };
+		04F58BA21EA0D92300A429B3 /* HostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostModel.m; sourceTree = "<group>"; };
+		04F58BA51EA0F35A00A429B3 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		04F58BA61EA0F35A00A429B3 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		5E3E09462C18E22F979E2F7D /* Pods-PandaVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaVPN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaVPN/Pods-PandaVPN.debug.xcconfig"; sourceTree = "<group>"; };
+		A236F53BEC448C2D4F2F9A65 /* Pods-PandaVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaVPN/Pods-PandaVPN.release.xcconfig"; sourceTree = "<group>"; };
+		D8999C26FF4A6C2783E41A87 /* libPods-PandaVPN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaVPN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F4A3651E9E09EA00E6C5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F4A3841E9E0A0900E6C5F8 /* NetworkExtension.framework in Frameworks */,
+				AD672E210C64A3B5E0A38924 /* libPods-PandaVPN.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F4A35F1E9E09EA00E6C5F8 = {
+			isa = PBXGroup;
+			children = (
+				04F4A36A1E9E09EA00E6C5F8 /* PandaVPN */,
+				04F4A3691E9E09EA00E6C5F8 /* Products */,
+				04F4A3821E9E0A0900E6C5F8 /* Frameworks */,
+				832F8E4FA60B585B41CA0C5B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		04F4A3691E9E09EA00E6C5F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A3681E9E09EA00E6C5F8 /* PandaVPN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F4A36A1E9E09EA00E6C5F8 /* PandaVPN */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A3851E9E0A0900E6C5F8 /* PandaVPN.entitlements */,
+				04F4A36E1E9E09EA00E6C5F8 /* AppDelegate.h */,
+				04F4A36F1E9E09EA00E6C5F8 /* AppDelegate.m */,
+				04F4A3711E9E09EA00E6C5F8 /* ViewController.h */,
+				04F4A3721E9E09EA00E6C5F8 /* ViewController.m */,
+				04F4A3741E9E09EA00E6C5F8 /* Main.storyboard */,
+				04F4A3771E9E09EA00E6C5F8 /* Assets.xcassets */,
+				04F4A3791E9E09EA00E6C5F8 /* LaunchScreen.storyboard */,
+				04F4A37C1E9E09EA00E6C5F8 /* Info.plist */,
+				04F58BA41EA0F31D00A429B3 /* API */,
+				04F58BA01EA0D90200A429B3 /* Model */,
+				04F4A3931E9E28F800E6C5F8 /* Sense */,
+				04F4A3861E9E0AB300E6C5F8 /* VPNConfig */,
+				04F4A38E1E9E145000E6C5F8 /* Resources */,
+				04F4A36B1E9E09EA00E6C5F8 /* Supporting Files */,
+			);
+			path = PandaVPN;
+			sourceTree = "<group>";
+		};
+		04F4A36B1E9E09EA00E6C5F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A36C1E9E09EA00E6C5F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F4A3821E9E0A0900E6C5F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A3831E9E0A0900E6C5F8 /* NetworkExtension.framework */,
+				D8999C26FF4A6C2783E41A87 /* libPods-PandaVPN.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F4A3861E9E0AB300E6C5F8 /* VPNConfig */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A3871E9E0AFD00E6C5F8 /* VPNInfo.h */,
+				04F4A3881E9E0AFD00E6C5F8 /* VPNInfo.m */,
+				04F4A38B1E9E0BB600E6C5F8 /* VPNConnectionManager.h */,
+				04F4A38C1E9E0BB600E6C5F8 /* VPNConnectionManager.m */,
+			);
+			path = VPNConfig;
+			sourceTree = "<group>";
+		};
+		04F4A38E1E9E145000E6C5F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A38F1E9E146D00E6C5F8 /* YGPulseView */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04F4A38F1E9E146D00E6C5F8 /* YGPulseView */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A3901E9E146D00E6C5F8 /* UIView+YGPulseView.h */,
+				04F4A3911E9E146D00E6C5F8 /* UIView+YGPulseView.m */,
+			);
+			path = YGPulseView;
+			sourceTree = "<group>";
+		};
+		04F4A3931E9E28F800E6C5F8 /* Sense */ = {
+			isa = PBXGroup;
+			children = (
+				04F4A3941E9E291A00E6C5F8 /* AboutViewController.h */,
+				04F4A3951E9E291A00E6C5F8 /* AboutViewController.m */,
+				04F4A39C1E9E57DB00E6C5F8 /* HostViewController.h */,
+				04F4A39D1E9E57DB00E6C5F8 /* HostViewController.m */,
+				04F4A39F1E9E58A700E6C5F8 /* InformationViewController.h */,
+				04F4A3A01E9E58A700E6C5F8 /* InformationViewController.m */,
+				04F4A3A21E9E59B800E6C5F8 /* DurationViewController.h */,
+				04F4A3A31E9E59B800E6C5F8 /* DurationViewController.m */,
+				040843AC1E9E5C18001EA1D2 /* ServiceViewController.h */,
+				040843AD1E9E5C18001EA1D2 /* ServiceViewController.m */,
+			);
+			path = Sense;
+			sourceTree = "<group>";
+		};
+		04F58BA01EA0D90200A429B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F58BA11EA0D92300A429B3 /* HostModel.h */,
+				04F58BA21EA0D92300A429B3 /* HostModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F58BA41EA0F31D00A429B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				04F58BA51EA0F35A00A429B3 /* API.h */,
+				04F58BA61EA0F35A00A429B3 /* API.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		832F8E4FA60B585B41CA0C5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E3E09462C18E22F979E2F7D /* Pods-PandaVPN.debug.xcconfig */,
+				A236F53BEC448C2D4F2F9A65 /* Pods-PandaVPN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F4A3671E9E09EA00E6C5F8 /* PandaVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F4A37F1E9E09EA00E6C5F8 /* Build configuration list for PBXNativeTarget "PandaVPN" */;
+			buildPhases = (
+				3F399F2EF9CF8AB1F912820E /* [CP] Check Pods Manifest.lock */,
+				04F4A3641E9E09EA00E6C5F8 /* Sources */,
+				04F4A3651E9E09EA00E6C5F8 /* Frameworks */,
+				04F4A3661E9E09EA00E6C5F8 /* Resources */,
+				24F6BD7097D80397CA32433C /* [CP] Embed Pods Frameworks */,
+				A63B1E3D91D0F4ADD3E7247E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PandaVPN;
+			productName = PandaVPN;
+			productReference = 04F4A3681E9E09EA00E6C5F8 /* PandaVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F4A3601E9E09EA00E6C5F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Andox;
+				TargetAttributes = {
+					04F4A3671E9E09EA00E6C5F8 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7DDM8M4627;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 04F4A3631E9E09EA00E6C5F8 /* Build configuration list for PBXProject "PandaVPN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F4A35F1E9E09EA00E6C5F8;
+			productRefGroup = 04F4A3691E9E09EA00E6C5F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F4A3671E9E09EA00E6C5F8 /* PandaVPN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F4A3661E9E09EA00E6C5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F4A37B1E9E09EA00E6C5F8 /* LaunchScreen.storyboard in Resources */,
+				04F4A3781E9E09EA00E6C5F8 /* Assets.xcassets in Resources */,
+				04F4A3761E9E09EA00E6C5F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24F6BD7097D80397CA32433C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaVPN/Pods-PandaVPN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F399F2EF9CF8AB1F912820E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A63B1E3D91D0F4ADD3E7247E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaVPN/Pods-PandaVPN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F4A3641E9E09EA00E6C5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F4A3A11E9E58A700E6C5F8 /* InformationViewController.m in Sources */,
+				04F58BA31EA0D92300A429B3 /* HostModel.m in Sources */,
+				04F4A38D1E9E0BB600E6C5F8 /* VPNConnectionManager.m in Sources */,
+				04F4A3891E9E0AFD00E6C5F8 /* VPNInfo.m in Sources */,
+				040843AE1E9E5C18001EA1D2 /* ServiceViewController.m in Sources */,
+				04F4A3731E9E09EA00E6C5F8 /* ViewController.m in Sources */,
+				04F4A3961E9E291A00E6C5F8 /* AboutViewController.m in Sources */,
+				04F58BA71EA0F35A00A429B3 /* API.m in Sources */,
+				04F4A39E1E9E57DB00E6C5F8 /* HostViewController.m in Sources */,
+				04F4A3701E9E09EA00E6C5F8 /* AppDelegate.m in Sources */,
+				04F4A36D1E9E09EA00E6C5F8 /* main.m in Sources */,
+				04F4A3A41E9E59B800E6C5F8 /* DurationViewController.m in Sources */,
+				04F4A3921E9E146D00E6C5F8 /* UIView+YGPulseView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04F4A3741E9E09EA00E6C5F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F4A3751E9E09EA00E6C5F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F4A3791E9E09EA00E6C5F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F4A37A1E9E09EA00E6C5F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F4A37D1E9E09EA00E6C5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04F4A37E1E9E09EA00E6C5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F4A3801E9E09EA00E6C5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E3E09462C18E22F979E2F7D /* Pods-PandaVPN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PandaVPN/PandaVPN.entitlements;
+				DEVELOPMENT_TEAM = 7DDM8M4627;
+				INFOPLIST_FILE = PandaVPN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Andox.PandaVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F4A3811E9E09EA00E6C5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A236F53BEC448C2D4F2F9A65 /* Pods-PandaVPN.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PandaVPN/PandaVPN.entitlements;
+				DEVELOPMENT_TEAM = 7DDM8M4627;
+				INFOPLIST_FILE = PandaVPN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Andox.PandaVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F4A3631E9E09EA00E6C5F8 /* Build configuration list for PBXProject "PandaVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F4A37D1E9E09EA00E6C5F8 /* Debug */,
+				04F4A37E1E9E09EA00E6C5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F4A37F1E9E09EA00E6C5F8 /* Build configuration list for PBXNativeTarget "PandaVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F4A3801E9E09EA00E6C5F8 /* Debug */,
+				04F4A3811E9E09EA00E6C5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F4A3601E9E09EA00E6C5F8 /* Project object */;
+}

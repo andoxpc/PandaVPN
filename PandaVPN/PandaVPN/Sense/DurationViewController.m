@@ -1,0 +1,42 @@
+//
+//  DurationViewController.m
+//  PandaVPN
+//
+//  Created by mac on 2017/4/12.
+//  Copyright © 2017年 Andox. All rights reserved.
+//
+
+#import "DurationViewController.h"
+
+@interface DurationViewController ()
+
+@end
+
+@implementation DurationViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.durationLabel.text = @"无期限";
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)popViewController:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
