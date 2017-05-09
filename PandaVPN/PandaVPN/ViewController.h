@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "VPNConnectionManager.h"
-#import "PulsingHaloLayer.h"
 
 @interface ViewController : UIViewController
 
@@ -25,8 +24,6 @@
 
 /// VPN 连接信息
 @property (nonatomic, strong) VPNInfo *vpnInfo;
-
-@property (nonatomic, strong) PulsingHaloLayer *pulsingLayer;
 
 @end
 

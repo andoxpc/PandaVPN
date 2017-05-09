@@ -15,14 +15,15 @@
 #import "AboutViewController.h"
 #import <AdSupport/AdSupport.h>
 #import <AFNetworking.h>
-#import "PulsingHaloLayer.h"
 #import "VPNConnectionManager.h"
+#import "HostModel.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) NSArray *stringArray;
 @property (strong, nonatomic) NSMutableArray *statusArray;
 @property (strong, nonatomic) NSArray *iconArray;
+@property (strong, nonatomic) NSMutableArray *nasArray;
 
 @property (nonatomic, strong) VPNInfo *vpnConfig;
 @property (nonatomic, strong) VPNConnectionManager *connectionManager;
@@ -52,14 +53,20 @@
             if (!self.vpnConfig) {
                 self.vpnConfig = [[VPNInfo alloc] init];
             }
-            self.vpnConfig.serverAddress = [[responseObject valueForKey:@"data"] valueForKey:@"nas"];
-            self.vpnConfig.remoteID = [[responseObject valueForKey:@"data"] valueForKey:@"nas"];
+            _nasArray = [[responseObject valueForKey:@"data"] valueForKey:@"nas"];
+            if (!_nasArray.count) {
+                return;
+            }
+            HostModel *nas = [[HostModel alloc]initWithDictionary:_nasArray[0] error:nil];
+            
+            self.vpnConfig.serverAddress = nas.nasIp;
+            self.vpnConfig.remoteID = nas.nasIp;
             self.vpnConfig.username = [[responseObject valueForKey:@"data"] valueForKey:@"username"];
             self.vpnConfig.password = [[responseObject valueForKey:@"data"] valueForKey:@"value"];
             self.vpnConfig.sharedSecret = @"myPSKkey";
             self.vpnConfig.preferenceTitle = @"PandaVPN";
-            [self.statusArray replaceObjectAtIndex:0 withObject:self.vpnConfig.serverAddress];
-            [self.statusArray replaceObjectAtIndex:1 withObject:self.vpnConfig.username];
+            [self.statusArray replaceObjectAtIndex:0 withObject:nas.nasName];
+            [self.statusArray replaceObjectAtIndex:1 withObject:@"免费套餐"];
             [self.listView reloadData];
             
             [_connectionManager checkVPNPreferenceSuccess:^(BOOL isInstalled) {
@@ -122,8 +129,19 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc;
     switch (indexPath.row) {
-        case 1:
+        case 1: {
             vc = [sb instantiateViewControllerWithIdentifier:@"HostViewController"];
+            ((HostViewController *)vc).hostArray = _nasArray;
+            ((HostViewController *)vc).block = ^(HostModel *nas) {
+                self.vpnConfig.serverAddress = nas.nasIp;
+                [self.listView reloadData];
+                [self.connectionManager stopVPNConnectSuccess:^{
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [self.connectionManager startVPNConnectSuccess:nil];
+                    });
+                }];
+            };
+        }
             break;
         case 2:
             vc = [sb instantiateViewControllerWithIdentifier:@"InformationViewController"];

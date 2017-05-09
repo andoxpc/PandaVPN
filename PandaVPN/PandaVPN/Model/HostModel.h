@@ -10,8 +10,8 @@
 
 @interface HostModel : JSONModel
 
-@property (strong, nonatomic) NSString *country;
-@property (strong, nonatomic) NSString *city;
-
+@property (strong, nonatomic) NSString *nasIp;
+@property (strong, nonatomic) NSString *nasName;
+@property (nonatomic) BOOL select;
 
 @end

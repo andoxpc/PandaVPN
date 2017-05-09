@@ -13,7 +13,7 @@
 @interface HostViewController ()
 
 @property (strong, nonatomic) AFHTTPSessionManager *requeset;
-@property (strong, nonatomic) NSArray *hostArray;
+
 
 @end
 
@@ -24,8 +24,6 @@
     self.requeset = [AFHTTPSessionManager manager];
     self.requeset.requestSerializer = [AFJSONRequestSerializer serializer];
     self.requeset.responseSerializer = [AFJSONResponseSerializer serializer];
-    
-    self.hostArray = [[NSArray alloc]initWithObjects:@"45.77.29.224", nil];
     
     // Do any additional setup after loading the view.
 }
@@ -50,20 +48,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HostCell"];
-    NSString *host = [self.hostArray objectAtIndex:indexPath.row];
-    NSString *url = [NSString stringWithFormat:@"http://ip.taobao.com/service/getIpInfo.php?ip=%@",host];
-    NSString *UTFurl = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    [self.requeset POST:UTFurl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        HostModel *model = [[HostModel alloc]initWithDictionary:[responseObject objectForKey:@"data"] error:nil];
-        cell.hostName.text = [NSString stringWithFormat:@"线路%ld    %@ %@",indexPath.row+1,model.country?model.country:@"",model.city?model.city:@""];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    HostModel *item = [[HostModel alloc]initWithDictionary:[self.hostArray objectAtIndex:indexPath.row] error:nil];
+    cell.item = item;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    HostModel *item = [[HostModel alloc]initWithDictionary:[self.hostArray objectAtIndex:indexPath.row] error:nil];
+    if (self.block) {
+        self.block(item);
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -81,5 +76,11 @@
 @end
 
 @implementation HostCell
+
+- (void)setItem:(HostModel *)item {
+    _item = item;
+    self.hostName.text = item.nasName;
+    self.selectedView.hidden = !item.select;
+}
 
 @end
